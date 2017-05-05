@@ -79,6 +79,11 @@ public class Film implements Serializable{
         }
         return true;
     }
+
+    @Override
+    public String toString() {
+        return "Film{" + "titre=" + titre + ", genre=" + genre + ", nbExemplaires=" + nbExemplaires + '}';
+    }
     public void setNbExemplaires(Integer nbExemplaires) {
         this.nbExemplaires = nbExemplaires;
     }

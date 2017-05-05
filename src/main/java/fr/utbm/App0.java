@@ -22,9 +22,7 @@ public class App0 implements Serializable{
         Abdou.setUserName("Adyeu");
         Abdou.setEnabled(true);
         Session session=HibernateUtil.getSessionFactory().openSession();
-        session.save(Abdou);
         session.getTransaction().commit();
         session.close();
-    }
-    
+    } 
 }

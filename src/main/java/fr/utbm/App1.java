@@ -18,8 +18,8 @@ public class App1 implements Serializable{
     
     public static void main(String[] args) throws SQLException {
         Film f= new Film();
-        f.setTitre("g");
-        f.setGenre("r");
+        f.setTitre("Kiroukou");
+        f.setGenre("manga");
         f.setNbExemplaires(1);
         FilmService fs= new FilmService();
         fs.registerFilm(f);  
